@@ -229,19 +229,21 @@
                     <div class="col">
                         <div class="form-control">
                             <form action="https://formsubmit.co/shinjansaha02@gmail.com" method="POST">
-                            <div class="form-inputs">
-                                <input type="text" name="name" class="input-field" placeholder="Name">
-                                <input type="email" name="email" class="input-field" placeholder="Email">
-                            </div>
-                            <div class="text-area">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-                            </div>
+                                <div class="form-inputs">
+                                    <input type="text" name="name" class="input-field" required placeholder="Name">
+                                    <input type="email" name="email" class="input-field" required placeholder="Email">
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="message"  required placeholder="Message"></textarea>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <div class="form-button">
+                                    <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                                </div>
                             </form>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
