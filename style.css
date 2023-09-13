@@ -357,15 +357,14 @@ h3{
 }
 
 /* ----- PROJECTS BOX ----- */
-.project-container {
+.project-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
-
-.project-box {
+.project-box{
     position: relative;
     display: flex;
     justify-content: center;
@@ -378,44 +377,35 @@ h3{
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     overflow: hidden;
 }
-
-.project-box > i {
+.project-box>i{
     font-size: 50px;
     color: #00B5E7;
     margin-bottom: 25px;
 }
-
-.project-box label {
+.project-box label{
     font-size: 15px;
     color: #777;
 }
-
-
-   
-    /* content: "";
+.project-box::after, .contact-info::after{
+    content: "";
     position: absolute;
     bottom: -100%;
     background: var(--second-color);
     width: 100%;
     height: 100%;
     transition: .4s;
-    z-index: 1; */
-
-
-
-/*.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after {
+    z-index: 1;
+}
+/* .project-box:hover.project-box::after,
+.contact-info:hover.contact-info::after{
     bottom: 0;
-}*/
-
-
-/*.project-box:hover.project-box i,
-.project-box:hover.project-box > h3,
-.project-box:hover.project-box > label {
+}
+.project-box:hover.project-box i,
+.project-box:hover.project-box>h3,
+.project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
-}*/
-
+} */
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -611,20 +601,11 @@ footer{
         justify-content: center;
         gap: 50px;
     }
-    .col {
+    .col{
         display: flex;
         justify-content: center;
-        align-items: center; /* Vertically center content */
+        width: 100%;
     }
-    
-    .about-info {
-        text-align: center;
-    }
-    
-    .about-btn {
-        margin-top: 20px; /* Adjust the margin to control the space between text and button */
-    }
-    
     .about-info, .contact-info{
         width: 100%;
     }
@@ -637,76 +618,11 @@ footer{
 
 }
 
-/* ----- MEDIA QUERY == 768px / RESPONSIVE ----- */
-@media only screen and (max-width: 768px) {
-    .nav-menu-btn{
-        display: none;
-    }
-    .nav-menu.responsive{
-        left: 0;
-    }
-    .nav-menu{
-        top: 70px;
-        min-height: 350px;
-    }
-    .featured-box{
-        min-height: 600px;
-    }
-    .featured-text{
-        min-height: 50vh;
-        width: 100%;
-        order: 2;
-        padding: 20px;
-    }
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
-    }
-    .featured-image{
-        min-height: 300px;
-        width: 100%;
-    }
-    .image, .image img{
-        width: 200px;
-        height: 200px;
-    }
-    .row{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .col {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .about-info, .contact-info{
-        padding: 20px;
-    }
-    .skills-box{
-        margin: 0;
-    }
-    .project-box{
-        width: 100%;
-    }
-}
-
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-@media only screen and (max-width: 540px){
-    .nav-menu{
-        top: 60px;
-    }
-    .nav-logo span{
-        font-size: 3em;
-    }
-    .nav-link{
-        margin-inline: 10px;
-    }
-    .featured-name{
-        font-size: 30px;
-    }
-    .featured-text-info{
-        font-size: 14px;
-    }
-    .social_icons{
-        margin-top: 3em;
     }
     .project-box{
         width: 100%;
@@ -716,21 +632,5 @@ footer{
     }
     .input-field{
         width: 100%;
-    }
-}
-
-/* ----- MEDIA QUERY == 414px / RESPONSIVE ----- */
-@media only screen and (max-width: 414px){
-    .nav-menu{
-        top: 50px;
-    }
-    .featured-name{
-        font-size: 25px;
-    }
-    .featured-text-info{
-        font-size: 13px;
-    }
-    .social_icons{
-        margin-top: 2em;
     }
 }
