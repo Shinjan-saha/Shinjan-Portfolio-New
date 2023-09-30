@@ -120,3 +120,15 @@ window.addEventListener('scroll', scrollActive)
 document.getElementById("download-button").addEventListener("click", function() {
   window.location.href = "https://drive.google.com/file/d/18-BLda8LmsvPs18gVo2294Fffo54b7d9/view?usp=sharing"; // Replace with your CV link
 });
+
+function toggleTab(tab) {
+  if (tab === 1) {
+    // Show the Education content and hide the Experience content
+    document.querySelector('.qualification__content-active').style.display = 'block';
+    document.querySelector('#experienceContent').style.display = 'none';
+  } else if (tab === 2) {
+    // Show the Experience content and hide the Education content
+    document.querySelector('.qualification__content-active').style.display = 'none';
+    document.querySelector('#experienceContent').style.display = 'block';
+  }
+}
