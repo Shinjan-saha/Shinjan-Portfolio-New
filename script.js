@@ -118,7 +118,7 @@ window.addEventListener('scroll', scrollActive)
 
 
 document.getElementById("download-button").addEventListener("click", function() {
-  window.location.href = "https://drive.google.com/file/d/18-BLda8LmsvPs18gVo2294Fffo54b7d9/view?usp=sharing"; // Replace with your CV link
+  window.location.href = "https://drive.google.com/file/d/1KAZuqx7hRBcuAG3V-PKncdmWWwEfJovl/view?usp=sharing"; // Replace with your CV link
 });
 
 function toggleTab(tab) {
