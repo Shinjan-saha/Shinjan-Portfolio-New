@@ -30,6 +30,7 @@
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
