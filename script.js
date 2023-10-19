@@ -117,9 +117,14 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 
-document.getElementById("download-button").addEventListener("click", function() {
+document.getElementById("download-button-home").addEventListener("click", function() {
   window.location.href = "https://drive.google.com/file/d/1KAZuqx7hRBcuAG3V-PKncdmWWwEfJovl/view?usp=sharing"; // Replace with your CV link
 });
+
+document.getElementById("download-button-about").addEventListener("click", function() {
+  window.location.href = "https://drive.google.com/file/d/1KAZuqx7hRBcuAG3V-PKncdmWWwEfJovl/view?usp=sharing"; // Replace with your CV link
+});
+
 
 function toggleTab(tab) {
   if (tab === 1) {
