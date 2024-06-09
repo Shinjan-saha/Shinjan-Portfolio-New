@@ -118,11 +118,11 @@ window.addEventListener('scroll', scrollActive)
 
 
 document.getElementById("download-button-home").addEventListener("click", function() {
-  window.location.href = "https://drive.google.com/file/d/1KAZuqx7hRBcuAG3V-PKncdmWWwEfJovl/view?usp=sharing"; // Replace with your CV link
+  window.location.href = "https://drive.google.com/file/d/1ONBiR0wfl0ipfNV8cz-kZgQPagayFzNk/view?usp=sharing"; 
 });
 
 document.getElementById("download-button-about").addEventListener("click", function() {
-  window.location.href = "https://drive.google.com/file/d/1KAZuqx7hRBcuAG3V-PKncdmWWwEfJovl/view?usp=sharing"; // Replace with your CV link
+  window.location.href = "https://drive.google.com/file/d/1ONBiR0wfl0ipfNV8cz-kZgQPagayFzNk/view?usp=sharing"; 
 });
 
 
