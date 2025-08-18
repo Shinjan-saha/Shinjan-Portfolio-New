@@ -6,40 +6,40 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, shopping cart, payment processing, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "pyfilterlab",
+      description: "pyfilterlab is a Python Package for designing and visualizing digital filters. It supports FIR/IIR filters, plots responses, and helps in learning or implementing signal processing techniques easily",
+      image: "https://i.postimg.cc/8krZ8Crj/temp-Imagefg4-Uyb.avif",
+      technologies: ["Python", "DSP", "Signal", "Processing", "MATLAB"],
+      githubUrl: "https://github.com/Shinjan-saha/pyfilterlab",
+      liveUrl: "https://pypi.org/project/pyfilterlab/0.1.1/",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Firebase", "Vuex", "CSS3"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Task Management System",
+      description: "A simple task management backend API built in Go featuring user registration, login with JWT authentication, and CRUD operations for tasks (add, update, delete, list)",
+      image: "https://i.postimg.cc/qqCn9gb0/temp-Image3k-Yc09.avif",
+      technologies: ["Reactjs", "Golang", "Typescript", "Vite"," Tailwind CSS","API","Postman"],
+      githubUrl: "https://github.com/Shinjan-saha/Task-Management-System/",
+      liveUrl: "https://task-management-system-go.vercel.app",
+      featured: false
+    },
+    {
+      title: "Perspecto Sphere",
+      description: "The \"Percepto Sphere\" project is an innovative solution aimed at enhancing the independence and mobility of visually impaired individuals. The project involves developing a smart glass that leverages advanced object recognition technology using the YOLO (You Only Look Once) algorithm. This smart glass can identify objects in the user's surroundings and immediately provide an audio output, announcing the name of the detected object.",
+      image: "https://i.postimg.cc/bNhHK9hB/temp-Image-Dp-UON8.avif",
+      technologies: ["Raspberry PI", "YOLO", "Object Recognition", "Tensorflow","Python"],
+      githubUrl: "https://github.com/Shinjan-saha/Perspecto-Sphere/tree/main",
+      liveUrl: "https://github.com/Shinjan-saha/Perspecto-Sphere/tree/main",
       featured: true
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["JavaScript", "API Integration", "Chart.js", "SCSS"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and optimized performance.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
+      title: "Certify-Me",
+      description: "This Flutter-based Certificate Exporter captures certificate widgets as high-quality PNG images and converts them into PDF documents. It supports customizable templates, seamless sharing, and efficient file saving, ensuring reliable certificate generation for various applications and easy distribution.",
+      image: "https://i.postimg.cc/HWKF5Kb7/temp-Images0-Vd-Oh.avif",
+      technologies: ["Flutter", "Dart", "PDF Generation", "Image Processing"],
+      githubUrl: "https://github.com/Shinjan-saha/certify_me",
+      liveUrl: "https://pub.dev/packages/certify_me",
+      featured: true
     }
   ];
 
@@ -47,7 +47,7 @@ const Projects = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
+          
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Featured Projects
@@ -57,7 +57,7 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
+         
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <Card 
@@ -65,7 +65,7 @@ const Projects = () => {
                 className="group overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 bg-card border-border/50"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                {/* Project Image */}
+                
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image}
@@ -74,17 +74,7 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  {/* Project Links Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button size="sm" className="bg-white text-primary hover:bg-white/90">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" variant="outline" className="border-white text-white hover:bg-white/10">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
-                  </div>
+                 
 
                   {project.featured && (
                     <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
@@ -104,7 +94,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                   
-                  {/* Technologies */}
+                 
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge 
@@ -117,7 +107,7 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {/* Links */}
+                  
                   <div className="flex gap-4 pt-4">
                     <Button variant="outline" size="sm" className="flex-1">
                       <Github className="h-4 w-4 mr-2" />
@@ -133,12 +123,8 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* View More Button */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
-              View All Projects
-            </Button>
-          </div>
+          
+         
         </div>
       </div>
     </section>
