@@ -40,6 +40,15 @@ const Projects = () => {
       githubUrl: "https://github.com/Shinjan-saha/certify_me",
       liveUrl: "https://pub.dev/packages/certify_me",
       featured: true
+    },
+    {
+      title: "Salary-Management-App",
+      description: "This Web-based Salary Management Applictation provides a comprehensive solution for managing employee salaries, including features for salary calculation, payslip generation, and reporting.",
+      image: "https://i.postimg.cc/V6dWL8BN/temp-Image-VDJfy4.avif",
+      technologies: ["NextJS", "TypeScript", "Golang", "API","RazorPay"],
+      githubUrl: "https://github.com/Shinjan-saha/Salary-Management-System",
+      liveUrl: "https://salary-management-system-five.vercel.app/",
+      featured: false
     }
   ];
 
@@ -57,7 +66,6 @@ const Projects = () => {
             </p>
           </div>
 
-         
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <Card 
@@ -65,7 +73,6 @@ const Projects = () => {
                 className="group overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 bg-card border-border/50"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image}
@@ -74,8 +81,6 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                 
-
                   {project.featured && (
                     <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
                       Featured
@@ -93,8 +98,7 @@ const Projects = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     {project.description}
                   </p>
-                  
-                 
+
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge 
@@ -107,24 +111,24 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  
                   <div className="flex gap-4 pt-4">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      GitHub
-                    </Button>
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" size="sm" className="w-full">
+                        <Github className="h-4 w-4 mr-2" />
+                        GitHub
+                      </Button>
+                    </a>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" className="w-full">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
-
-          
-         
         </div>
       </div>
     </section>
