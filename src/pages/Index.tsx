@@ -3,7 +3,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { ExperienceEducation } from "@/components/expe"; // Adjusted import to match the new export
+import { ExperienceEducation } from "@/components/expe"; 
 
 const Index = () => {
   return (
