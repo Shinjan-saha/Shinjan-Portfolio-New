@@ -49,6 +49,15 @@ const Projects = () => {
       githubUrl: "https://github.com/Shinjan-saha/Salary-Management-System",
       liveUrl: "https://salary-management-system-five.vercel.app/",
       featured: false
+    },
+    {
+      title: "IOT-App-Showcase-Web",
+      description: "An IoT Showcasing website that highlights my innovative Internet of Things projects, featuring smart devices, sensor integrations, and real-time data applications. It serves as a portfolio to demonstrate practical solutions in automation, monitoring, and connectivity, providing visitors with insights into how IoT technologies can solve real-world problems",
+      image: "https://i.postimg.cc/76nJktjL/temp-Image0-E5-Af-R.avif",
+      technologies: ["IOT", "Embedded C", "Arduino", "Microcontroller"],
+      githubUrl: "https://github.com/Shinjan-saha/IOT-website",
+      liveUrl: "https://iot-website-mu.vercel.app/",
+      featured: true
     }
   ];
 
