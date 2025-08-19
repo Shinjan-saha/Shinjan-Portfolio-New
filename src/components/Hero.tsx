@@ -40,17 +40,20 @@ const Hero = () => {
           </div>
 
          
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-delay-3">
-      <Link href="https://drive.google.com/file/d/1bctmkEGeCJMPSApRaGQTr0qxHxAd7FSE/view?usp=sharing" target="_blank" >
-        <Button
-          size="lg"
-          className="bg-white text-primary hover:bg-white/90 shadow-lg transform hover:scale-105 transition-all duration-300"
-        >
-          <Download className="mr-2 h-5 w-5" />
-          Download CV
-        </Button>
-      </Link>
-    </div>
+      <div className="w-full flex justify-center mb-12 animate-fade-in-delay-3">
+  <Link
+    href="https://drive.google.com/file/d/1bctmkEGeCJMPSApRaGQTr0qxHxAd7FSE/view?usp=sharing"
+    target="_blank"
+  >
+    <Button
+      size="lg"
+      className="bg-white text-primary hover:bg-white/90 shadow-lg transform hover:scale-105 transition-all duration-300"
+    >
+      <Download className="mr-2 h-5 w-5" />
+      Download CV
+    </Button>
+  </Link>
+</div>
 
          
           <div className="flex justify-center gap-6 mb-16 animate-fade-in-delay-4">
