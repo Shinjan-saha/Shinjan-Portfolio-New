@@ -12,14 +12,8 @@ const Index = () => {
       <Hero />
       <ExperienceEducation />
       <Skills />
-       {/* <Review
-        websiteId="0f77d086-b1b0-4a8a-902b-ea611f53b825"
-        theme="light"
-        minRating={5}
-        totalRev={40}
-      /> */}
+      <Review/>
       <Projects />
-     
       <Contact />
       <Footer />
     </div>
