@@ -16,6 +16,18 @@ export default function Review() {
           tot={"40"}
           embedSentiment={"positive"}
         />
+
+       
+        <div className="mt-10">
+          <a
+            href="https://review-r.godutta.tech/review/d7a557a0-3db5-4013-9040-8345613d22fa" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition"
+          >
+            Leave Your Review
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -40,7 +52,7 @@ export function ReviewEmbed({
 
     const container = document.getElementById("review-embed");
     if (container) {
-      container.innerHTML = ""; // reset before reloading
+      container.innerHTML = ""; 
       container.appendChild(script);
     }
 
