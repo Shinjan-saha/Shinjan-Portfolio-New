@@ -5,11 +5,13 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Review from "@/components/Review";
 import { ExperienceEducation } from "@/components/expe"; 
+import BlueprintDivider from "@/components/BlueprintDivider";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
+      <BlueprintDivider />
       <ExperienceEducation />
       <Skills />
       <Projects />
