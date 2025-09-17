@@ -2,6 +2,13 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 export  function ExperienceEducation() {
   const experiences = [
+
+    {
+      role: " Intern",
+      company: "Siemens",
+      duration: "September 2025- Present",
+      description: "Working on PLC Programming using ABT Portal  Learning about Industrial Automation and its Applications",
+    },
     {
       role: "Software Engineer Intern",
       company: "Techno Billion AI",
