@@ -65,8 +65,8 @@ export  function ExperienceEducation() {
                   key={index}
                   className="p-5 bg-white rounded-2xl shadow hover:shadow-md transition"
                 >
-                  <h4 className="font-semibold text-lg">{exp.role}</h4>
-                  <p className="text-sm text-gray-500">{exp.company} • {exp.duration}</p>
+                  <h4 className="font-semibold text-lg">{exp.company}</h4>
+                  <p className="text-sm text-gray-500">{exp.role} • {exp.duration}</p>
                   <p className="mt-2 text-gray-600 text-sm">{exp.description}</p>
                 </div>
               ))}
