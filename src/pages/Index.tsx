@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Review from "@/components/Review";
 import { ExperienceEducation } from "@/components/expe"; 
 import BlueprintDivider from "@/components/BlueprintDivider";
+import Doublecurve from "@/components/doublecurve";
+
 
 const Index = () => {
   return (
@@ -13,9 +15,13 @@ const Index = () => {
       <Hero />
       <BlueprintDivider />
       <ExperienceEducation />
+      <Doublecurve />
       <Skills />
+      <Doublecurve />
       <Projects />
+      <Doublecurve />
       <Review/>
+      <Doublecurve />
       <Contact />
       <Footer />
     </div>
